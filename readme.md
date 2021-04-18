@@ -23,7 +23,7 @@ yarn cli-single
 yarn cli-multi
 ```
 
-will run, respecively, wca in CLI mode over the two files.   Or you can run `yarn cli-all` to save a bit of typing.  Check the `scripts` entry in package.json to see the CLI sytaxes used.
+will run, respecively, wca in CLI mode over the two files.   (Or you can run `yarn cli-all` to save a bit of typing.)  Check the `scripts` entry in package.json to see the CLI syntaxes used.
 
 #### CLI Results
 In both cases, the terminal output will show that props from both `TextField` and `TextFieldParent` are included in the markdown.
@@ -35,7 +35,7 @@ yarn api-single
 yarn api-multi
 ```
 
-will repeat the two test, but using the `analyzeText` function from the API rather than using CLI mode.   Again, you can use `yarn api-all` to save yourself some typing.
+will repeat the two tests, but this time using the `analyzeText` function from the API rather than using CLI mode.   (Again, you can use `yarn api-all` to save yourself some typing.)
 
 The two api scripts call the files test-api-single.js and test-api-multi.js, which are both in the examples/js folder.  
 
