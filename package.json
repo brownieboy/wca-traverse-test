@@ -5,11 +5,16 @@
   "author": "Michael Brown <brownieboy@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "cli-single": "echo Single File Test && wca analyze ./examples/cli/single.file.ts --format json",
-    "cli-multi": "echo Multi File Test && wca analyze ./examples/cli/multi.file.ts --format json",
-    "cli-all": "yarn cli-single && yarn cli-multi"
+    "cli-single": "echo Single File Test && wca analyze ./examples/cli/single.file.ts --format markdown",
+    "cli-multi": "echo Multi File Test && wca analyze ./examples/cli/multi.file.ts --format markdown",
+    "cli-all": "yarn cli-single && yarn cli-multi",
+    "api-single": "node ./examples/js/test-api-single.js",
+    "api-multi": "node ./examples/js/test-api-multi.js",
+    "api-all": "yarn api-single && yarn api-multi",
+    "all-tests": "yarn cli-all && yarn api-all"
   },
   "dependencies": {
+    "fs-extra": "^9.1.0",
     "lit-element": "^2.4.0",
     "web-component-analyzer": "^1.1.6"
   },

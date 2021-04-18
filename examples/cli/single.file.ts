@@ -4,7 +4,8 @@ import { customElement, LitElement, property } from "lit-element";
  * @prop {Array} [permissions=false] Permissions to you know, do stuff in the app
  * @prop {Object} [config={}] The app's config (rather important!)
  */
- class TestFieldParent extends LitElement {
+ @customElement("test-field-parent")
+ class TextFieldParent extends LitElement {
  
    @property({ type: Object, reflect: true })
    public config: ConfigType = null;
@@ -13,18 +14,11 @@ import { customElement, LitElement, property } from "lit-element";
    public permissions: PermissionsType = null;
  }
  
- /**
-  * A text field web component
-  */
- @customElement("text-field")
- export class TextField extends TestFieldParent {
-
-
 /**
  * A text field web component
  */
 @customElement("text-field")
-export class TextField extends LitElement {
+export class TextField extends TextFieldParent {
   /**
    * The value of the text field
    * @attr
